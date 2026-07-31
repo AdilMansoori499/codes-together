@@ -1,0 +1,18 @@
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        int j = 0; // Pointer for the last non-zero element position
+
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums[i] != 0) {
+                swap(nums[i], nums[j]);
+                j++;
+            }
+        }
+    }
+};
