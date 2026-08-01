@@ -7,18 +7,21 @@ class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
         int n = nums.size();
-        if (n == 0) return;
+        k=k%n;
+        vector<int> temp;
+        for(int i=n-k;i<n;i++)
+        {
+            temp.push_back(nums[i]);
+        }
+        for(int i=n-1;i>=k;i--)
+        {
+            nums[i]=nums[i-k];
+        }
+        for(int i=0;i<k;i++)
+        {
+            nums[i]=temp[i];
+        }
 
-        // Step 1: Normalize k in case k >= n
-        k = k % n;
-
-        // Step 2: Reverse the entire array
-        reverse(nums.begin(), nums.end());
-
-        // Step 3: Reverse the first k elements
-        reverse(nums.begin(), nums.begin() + k);
-
-        // Step 4: Reverse the remaining (n - k) elements
-        reverse(nums.begin() + k, nums.end());
     }
+        
 };
