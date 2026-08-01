@@ -1,22 +1,22 @@
-#include <vector>
-using namespace std;
-
 class Solution {
   public:
-    vector<int> removeDuplicates(vector<int>& arr) {
-        if (arr.empty()) return {};
-
-        int i = 0; // Pointer to place unique elements
-
-        for (int j = 1; j < arr.size(); j++) {
-            if (arr[j] != arr[i]) {
+    vector<int> removeDuplicates(vector<int> &arr) {
+        // code here
+             int n=arr.size();
+             vector<int> brr;
+             brr.push_back(arr[0]);
+        int i=0;
+        for(int j=0;j<=n-1;j++)
+        {
+            if(arr[j]!=arr[i])
+            {
+                arr[i+1]=arr[j];
                 i++;
-                arr[i] = arr[j];
+                brr.push_back(arr[j]);
             }
         }
-
-        // Keep only unique elements up to index 'i'
-        arr.resize(i + 1);
-        return arr;
+        return brr;
+        
+    
     }
 };
