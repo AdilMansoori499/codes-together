@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0026-remove-duplicates-from-sorted-array](https://github.com/AdilMansoori499/codes-together/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0074-search-a-2d-matrix](https://github.com/AdilMansoori499/codes-together/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/AdilMansoori499/codes-together/tree/master/0075-sort-colors) |
+| [0169-majority-element](https://github.com/AdilMansoori499/codes-together/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/AdilMansoori499/codes-together/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/AdilMansoori499/codes-together/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/AdilMansoori499/codes-together/tree/master/0283-move-zeroes) |
@@ -27,11 +28,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Divide and Conquer
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/AdilMansoori499/codes-together/tree/master/0169-majority-element) |
 | [0912-sort-an-array](https://github.com/AdilMansoori499/codes-together/tree/master/0912-sort-an-array) |
 ## Sorting
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/AdilMansoori499/codes-together/tree/master/0075-sort-colors) |
+| [0169-majority-element](https://github.com/AdilMansoori499/codes-together/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/AdilMansoori499/codes-together/tree/master/0268-missing-number) |
 | [0912-sort-an-array](https://github.com/AdilMansoori499/codes-together/tree/master/0912-sort-an-array) |
 ## Heap (Priority Queue)
@@ -53,6 +56,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting Sort
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/AdilMansoori499/codes-together/tree/master/0169-majority-element) |
 | [0912-sort-an-array](https://github.com/AdilMansoori499/codes-together/tree/master/0912-sort-an-array) |
 ## Two Pointers
 |  |
@@ -65,6 +69,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/AdilMansoori499/codes-together/tree/master/0001-two-sum) |
+| [0169-majority-element](https://github.com/AdilMansoori499/codes-together/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/AdilMansoori499/codes-together/tree/master/0268-missing-number) |
 | [0560-subarray-sum-equals-k](https://github.com/AdilMansoori499/codes-together/tree/master/0560-subarray-sum-equals-k) |
 ## Binary Search
@@ -92,4 +97,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/AdilMansoori499/codes-together/tree/master/0075-sort-colors) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/AdilMansoori499/codes-together/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
