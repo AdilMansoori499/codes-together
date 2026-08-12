@@ -2,31 +2,32 @@ class Solution {
 public:
     int singleNumber(vector<int>& nums) {
         int n=nums.size();
-        int num=0;
-        for(int i=0;i<n;i++)
-        {
-            num=nums[i];
-            int count=0;
-            for(int j=0;j<n;j++)
-            {
-                if(nums[j]==num)
-                {
-                    count++;
-                }
-            }
-            if(count==1)
-            {
-                return num;
-            }
-        }
-        return num;
-        
-        //xor method
-        // int xor2=0;
+        //brute approach
+        // int num=0;
         // for(int i=0;i<n;i++)
         // {
-        //     xor2=xor2^nums[i];
+        //     num=nums[i];
+        //     int count=0;
+        //     for(int j=0;j<n;j++)
+        //     {
+        //         if(nums[j]==num)
+        //         {
+        //             count++;
+        //         }
+        //     }
+        //     if(count==1)
+        //     {
+        //         return num;
+        //     }
         // }
-        // return xor2;
+        // return num;
+        
+        //xor method
+        int xor2=0;
+        for(int i=0;i<n;i++)
+        {
+            xor2=xor2^nums[i];
+        }
+        return xor2;
     }
 };
