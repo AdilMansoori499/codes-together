@@ -21,8 +21,9 @@ public:
         //     }
         // }
         // return num;
+                      
         
-        //xor method
+        //xor method(optmal solution)
         int xor2=0;
         for(int i=0;i<n;i++)
         {
