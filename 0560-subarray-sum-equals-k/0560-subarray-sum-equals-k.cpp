@@ -1,29 +1,31 @@
-#include <vector>
-#include <unordered_map>
-
 class Solution {
 public:
-    int subarraySum(std::vector<int>& nums, int k) {
-        std::unordered_map<int, int> prefixMap;
-        
-        // Base case: A prefix sum of 0 has occurred once before starting iteration
-        prefixMap[0] = 1;
-        
-        int currentSum = 0;
-        int count = 0;
-        
-        for (int num : nums) {
-            currentSum += num;
-            
-            // If (currentSum - k) exists, it means we found subarray(s) summing to k
-            if (prefixMap.find(currentSum - k) != prefixMap.end()) {
-                count += prefixMap[currentSum - k];
+    int subarraySum(vector<int>& nums, int k) {
+        int n=nums.size();
+
+        //brute solution
+        int sum=0;
+        int ans=0;
+        for(int i=0;i<n;i++)
+        {
+            sum=nums[i];
+            if(sum==k){
+                ans++;
+
             }
-            
-            // Increment frequency of the current prefix sum
-            prefixMap[currentSum]++;
+            for(int j=i+1;j<n;j++)
+            {
+                sum+=nums[j];
+                if(sum==k)
+                {
+                 ans++;
+                }
+
+            }
         }
+        return ans;
         
-        return count;
+
+        
     }
 };
