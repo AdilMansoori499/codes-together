@@ -37,30 +37,63 @@ public:
 
 
         //better solution
+        // int n=nums.size();
+        // if(n==0)
+        // {
+        //     return 0;
+        // }
+        // int longest=1;
+        // int lastelement=INT_MIN;
+        // int count=0;
+        // sort(nums.begin(),nums.end());
+        // for(int i=0; i<n; i++)
+        // {
+        //     if(nums[i]-1==lastelement)
+        //     {
+        //         lastelement=nums[i];
+        //         count+=1;
+        //     }
+        //     else if(lastelement!=nums[i])
+        //     {
+        //         count=1;
+        //         lastelement=nums[i];
+        //     }
+        //     longest=max(longest,count);
+        // }
+        // return longest;
+
+
+        //optimal solution
+
         int n=nums.size();
         if(n==0)
         {
             return 0;
         }
         int longest=1;
-        int lastelement=INT_MIN;
-        int count=0;
-        sort(nums.begin(),nums.end());
-        for(int i=0; i<n; i++)
+        unordered_set<int> st;
+        for(int i=0;i<n;i++)
         {
-            if(nums[i]-1==lastelement)
-            {
-                lastelement=nums[i];
-                count+=1;
-            }
-            else if(lastelement!=nums[i])
-            {
-                count=1;
-                lastelement=nums[i];
-            }
-            longest=max(longest,count);
+            st.insert(nums[i]);
+        }
+        for(auto it : st)
+        {
+               if(st.find(it-1)==st.end())
+               {
+                  int count=1;
+                  int x=it;
+                  while(st.find(x+1)!=st.end())
+                  {
+                    x=x+1;
+                    count+=1;
+
+                  }
+                  longest=max(longest,count);
+
+               }
         }
         return longest;
+        
     }  
 
 };
